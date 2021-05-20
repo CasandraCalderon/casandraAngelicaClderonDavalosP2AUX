@@ -1,0 +1,20 @@
+{
+  "name": "example1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && node ./dist/main.js"
+  },
+  "author": "casandra",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.5"
+  },
+  "dependencies": {
+    "@types/readline-sync": "^1.4.3",
+    "@types/sha1": "^1.1.2",
+    "jquery": "^3.6.0",
+    "readline-sync": "^1.4.10"
+  }
+}
