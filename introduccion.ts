@@ -1,7 +1,10 @@
-//Cree una función llamada “greet” para poder saludar a una persona y además mostrarle su edad, es decir, la salida de la función debe ser algo parecido a “hello Josie, your age is 25”
-function greet (nombre, edad){
+//Cree una función donde el tipo de retorno “never” sea útil cambie el tipo de retorno de la función “greet” a “never”
+function greet (never){
     console.log('hello ', nombre, 'your age is ', edad)
  }
+  
+ function never (nombre, edad){
+ }
  greet('Angie',23);
- /*¿Qué tipo de retorno le asigno TypeScript a esta función?
- R. Dara un retorno de tipo string y number.*/
+ /*¿La acción anterior le da algún error? ¿Sí? ¿No? ¿Por qué?
+R. Si dara error porque no se esta usando la funcion “never” en la funcion “greet” de manera correcta para usarla como paramentro.*/
