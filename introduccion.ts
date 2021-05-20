@@ -4,9 +4,10 @@ const greet = (nombre : string, edad: number, año: number | string, cb: (saludo
     return cb (saludo);
  }
   
- let never = greet ('Angie', 23, 1997, (saludo) => {
+ let never = greet ('Angie', 23, '1997', (saludo) => {
     return saludo;
  })
   
  console.log(never);
+ 
  

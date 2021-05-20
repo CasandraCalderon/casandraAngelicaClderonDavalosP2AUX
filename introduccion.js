@@ -3,7 +3,7 @@ var greet = function (nombre, edad, año, cb) {
     var saludo = ('Hello ' + nombre + ' your age is ' + edad + ' and you were born is ' + año);
     return cb(saludo);
 };
-var never = greet('Angie', 23, 1997, function (saludo) {
+var never = greet('Angie', 23, '1997', function (saludo) {
     return saludo;
 });
 console.log(never);
