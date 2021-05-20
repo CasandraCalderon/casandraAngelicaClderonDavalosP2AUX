@@ -1,10 +1,10 @@
-//Modifique la función “greet” para poder implementar una función como parámetro la cual se encargará de imprimir o generar el saludo, establezca los tipos de datos necesarios para que la función cumpla con los requerimientos de TypeScript
-const greet = (nombre : string, edad: number, cb: (saludo: string) => string) => {
-    let saludo = ('Hello '+ nombre + ' your age is '+ edad);
+//Modifique una vez más la función de “greet” para poder imprimir su año de nacimiento, pero agregue un parámetro para poder imprimirlo como numero o como cadena, de manera que dependiendo que argumento le pasen, lo imprima como uno de estos dos tipos de datos
+const greet = (nombre : string, edad: number, año: number | string, cb: (saludo: string) => string) => {
+    let saludo = ('Hello '+ nombre + ' your age is '+ edad + ' and you were born is '+año);
     return cb (saludo);
  }
   
- let never = greet ('Angie', 23, (saludo) => {
+ let never = greet ('Angie', 23, 1997, (saludo) => {
     return saludo;
  })
   
